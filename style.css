@@ -67,6 +67,10 @@ h3 {
   text-align: justify;
   word-break: break-all;
 }
+.slant p, #slant {
+  font-style: italic;
+  font-size: 12px;
+}
 @media screen and (min-width: 600px) {
   .right-area {
     padding: 30px 20px 0px 20px;
