@@ -4,14 +4,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  max-width: 1000px;
+  max-width: 910px;
   margin: 0 auto;
 }
 header {
   width: 100%;
   background-color: rgb(83, 117, 145);
   display: flex;
-  justify-content: center;
+  padding: 20px 0;
   align-items: center;
 }
 
@@ -24,12 +24,13 @@ header img {
 }
 .img-text {
   color: rgb(17, 17, 78);
-  margin: 30px;
-  padding: 30px;
   align-items: center;
 }
 .content {
   display: flex;
+}
+#down {
+  padding-bottom: 50px;
 }
 .profile {
   width: 100%;
@@ -58,6 +59,7 @@ h3 {
   width: 30%;
   background-color: rgb(211, 219, 236);
   position: relative;
+  color: rgb(17, 17, 78);
 }
 
 .right-area {
@@ -67,7 +69,8 @@ h3 {
   text-align: justify;
   word-break: break-all;
 }
-.slant p, #slant {
+.slant p,
+#slant {
   font-style: italic;
   font-size: 12px;
 }
@@ -79,7 +82,8 @@ h3 {
     font-size: 15px;
     line-height: 25px;
   }
-  .right-area p, li {
+  .right-area p,
+  li {
     max-width: 95%;
   }
   .left-area {
@@ -92,28 +96,36 @@ h3 {
     font-size: 25px;
     text-align: center;
   }
-   
 }
 @media screen and (max-width: 600px) {
   .right-area {
-    padding: 0 12px 5px 0;
-    width: 51%;
+    padding: 10px 17px 0px 0;
+    width: 100%;
     color: rgb(17, 17, 78);
     font-size: 10px;
     line-height: 17px;
   }
   .left-area {
-    padding: 0 10px 0 13px;
-    width: 49%;
-    color: brown;
+    padding: 10px 30px;
+    width: 100%;
+    color: rgb(17, 17, 78);
     font-size: 14px;
+    overflow: hidden;
   }
   h1,
   h3 {
     font-size: 25px;
     text-align: center;
   }
+  .img-text {
+    width: 100%;
+    justify-content: center;
+  }
   header img {
     display: none;
+  }
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
