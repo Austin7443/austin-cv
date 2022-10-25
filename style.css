@@ -7,6 +7,9 @@
   max-width: 910px;
   margin: 0 auto;
 }
+body {
+  background-color: black;
+}
 header {
   width: 100%;
   background-color: rgb(83, 117, 145);
